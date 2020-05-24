@@ -68,7 +68,6 @@ public class ElasticSchemaHandellerService {
 			break;
 		default:
 			isindexeddeleted = false;
-
 		}
 		return isindexeddeleted;
 
