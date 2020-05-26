@@ -13,10 +13,12 @@
 ---
 
 ### Add elastic search host in property file
+
+```text
 elasticsearch.clustername = elasticsearch
 elasticsearch.host = localhost
 elasticsearch.port = 9300
- 
+ ```
 ---
 
 ### Add spring-data elastic serach dependency
@@ -25,7 +27,8 @@ elasticsearch.port = 9300
 <dependency>
 <groupId>org.springframework.boot</groupId>
 <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
-</dependency>
+</dependency> 
+```
 
 ---
 
@@ -49,7 +52,8 @@ elasticsearch.port = 9300
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.9.2</version>
-		</dependency>
+		</dependency> 
+```
 ---
 
 ### Create Elastic config file
