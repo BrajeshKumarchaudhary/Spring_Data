@@ -1,18 +1,18 @@
 # Spring_Data
-#Spring-Data-elasticSearch
+# Spring-Data-elasticSearch
 ---
 
-## Create Spring boot starter project goto file->new->Spring Starter project
-![](https://github.com/BrajeshKumarchaudhary/springcloudconfig_properties/blob/master/spring-elastic/spring-elastic1.png,"Step1")
+### Create Spring boot starter project goto file->new->Spring Starter project
+![Step1](https://github.com/BrajeshKumarchaudhary/springcloudconfig_properties/blob/master/spring-elastic/spring-elastic1.png,"Step1")
 ---
-##Following directory Structure
-![](https://github.com/BrajeshKumarchaudhary/springcloudconfig_properties/blob/master/spring-elastic/2.png,"Step2")
+### Following directory Structure
+![Step2](https://github.com/BrajeshKumarchaudhary/springcloudconfig_properties/blob/master/spring-elastic/2.png,"Step2")
 ---
-##Add elastic search host in property file
- 'elasticsearch.clustername = elasticsearch
+### Add elastic search host in property file
+elasticsearch.clustername = elasticsearch
 elasticsearch.host = localhost
 elasticsearch.port = 9300
-' 
+ 
 ---
 ## Add spring-data elastic serach dependency
 '<dependency>
@@ -20,15 +20,12 @@ elasticsearch.port = 9300
 <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
 </dependency>'
 ---
-##Add Lambok and Swagger Dependency
-'
+## Add Lambok and Swagger Dependency
 <dependency>
 <groupId>org.projectlombok</groupId>
 <artifactId>lombok</artifactId>
 <optional>true</optional>
 </dependency>
-',
-'
           <!-- Swagger Dependency -->
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -41,10 +38,9 @@ elasticsearch.port = 9300
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.9.2</version>
 		</dependency>
-'
 ---
-##Create Elastic config file
----JAVA
+### Create Elastic config file
+
 public class ElasticSearchConfig {
 
     @Value("${elasticsearch.host}")
@@ -67,8 +63,7 @@ public class ElasticSearchConfig {
         return new ElasticsearchTemplate(client());
     }
 
-##Similarly create Swagger Config
----JAVA
+## Similarly create Swagger Config
 public class SwaggerConfig {
 
 	@Bean
@@ -85,7 +80,7 @@ public class SwaggerConfig {
 	}
 
 }
-##
+
 
 ---
 
