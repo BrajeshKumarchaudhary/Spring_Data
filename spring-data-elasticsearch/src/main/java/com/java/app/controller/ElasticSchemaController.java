@@ -14,7 +14,7 @@ import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 
 @RestController
-@Api(tags = "All Schema Related Configuration Like index Create and Index Delete")
+@Api(tags = "Create and Delete Index")
 public class ElasticSchemaController {
 	Logger log = LoggerFactory.getLogger(ElasticSchemaController.class);
 	@Autowired

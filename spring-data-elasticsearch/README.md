@@ -102,3 +102,12 @@ public class SwaggerConfig {
 
 ---
 
+## All API in Swagger
+
+![Step4](https://github.com/BrajeshKumarchaudhary/springcloudconfig_properties/blob/master/spring-elastic/4.png)
+
+
+
+---
+
+

@@ -37,16 +37,6 @@ public class ElasticSearchConfig {
         return new PreBuiltTransportClient(Settings.EMPTY)
                 .addTransportAddress(new TransportAddress(InetAddress.getByName(EsHost), EsPort));
     }
-
-//    @Bean
-//    public ElasticsearchOperations elasticsearchTemplate() throws Exception {
-//        return new ElasticsearchTemplate(client());
-//    }
-//    @Bean
-//    public ElasticSchemaHandellerService elasticService()
-//    {
-//    	return new ElasticSchemaHandellerService();
-//    }
     @Bean
     public ElasticsearchTemplate elasticsearchTemplate() throws Exception {
         return new ElasticsearchTemplate(client());
