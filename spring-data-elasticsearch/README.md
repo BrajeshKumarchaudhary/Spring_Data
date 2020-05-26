@@ -3,24 +3,32 @@
 ---
 
 ### Create Spring boot starter project goto file->new->Spring Starter project
-![Step1](https://github.com/BrajeshKumarchaudhary/springcloudconfig_properties/blob/master/spring-elastic/spring-elastic1.png,"Step1")
+![Step1](https://github.com/BrajeshKumarchaudhary/springcloudconfig_properties/blob/master/spring-elastic/spring-elastic1.png)
+
 ---
+
 ### Following directory Structure
-![Step2](https://github.com/BrajeshKumarchaudhary/springcloudconfig_properties/blob/master/spring-elastic/2.png,"Step2")
+![Step2](https://github.com/BrajeshKumarchaudhary/springcloudconfig_properties/blob/master/spring-elastic/2.png)
+
 ---
+
 ### Add elastic search host in property file
 elasticsearch.clustername = elasticsearch
 elasticsearch.host = localhost
 elasticsearch.port = 9300
  
 ---
-## Add spring-data elastic serach dependency
-'<dependency>
+
+### Add spring-data elastic serach dependency
+
+<dependency>
 <groupId>org.springframework.boot</groupId>
 <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
-</dependency>'
+</dependency>
+
 ---
-## Add Lambok and Swagger Dependency
+
+### Add Lambok and Swagger Dependency
 <dependency>
 <groupId>org.projectlombok</groupId>
 <artifactId>lombok</artifactId>
@@ -39,6 +47,7 @@ elasticsearch.port = 9300
 			<version>2.9.2</version>
 		</dependency>
 ---
+
 ### Create Elastic config file
 
 public class ElasticSearchConfig {
@@ -64,6 +73,7 @@ public class ElasticSearchConfig {
     }
 
 ## Similarly create Swagger Config
+
 public class SwaggerConfig {
 
 	@Bean
