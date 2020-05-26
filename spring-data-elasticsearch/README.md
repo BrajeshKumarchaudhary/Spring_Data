@@ -21,15 +21,18 @@ elasticsearch.port = 9300
 
 ### Add spring-data elastic serach dependency
 
-<dependency>
+'<dependency>
 <groupId>org.springframework.boot</groupId>
 <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
-</dependency>
+</dependency>'
 
 ---
 
 ### Add Lambok and Swagger Dependency
-<dependency>
+
+
+
+'<dependency>
 <groupId>org.projectlombok</groupId>
 <artifactId>lombok</artifactId>
 <optional>true</optional>
@@ -45,7 +48,7 @@ elasticsearch.port = 9300
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.9.2</version>
-		</dependency>
+		</dependency>'
 ---
 
 ### Create Elastic config file
